@@ -1,0 +1,26 @@
+<h3>
+  Find your Craft!
+</h3>
+<app-navbar></app-navbar>
+<br/>
+<div class="row">
+    <div class="col s6 offset-s3">
+        <div class="card" style="border: 1px solid white;">
+          <div class="card-content black">
+            <div *ngIf="answers.length > 4 else askQuestions">
+              <h4>You should try {{ craftAnswered.craftName }}!</h4>
+              <p>{{ craftAnswered.craftReason }}</p>
+            <a href="craft" style="float:left">Try it again!</a> or
+            <a href="default" style="float:right">Return home</a></div>
+            <ng-template #askQuestions>
+              <h5>{{ loadedQuestion.questionText }}</h5><br/>
+              <span  class="choice1">
+                <button (click)="chooseOption($event)" id="1"></button><label> {{ loadedQuestion.choice1 }}</label>
+              </span><br/><span class="choice2">
+                <button (click)="chooseOption($event)" id="2"></button><label> {{ loadedQuestion.choice2 }}</label>
+              </span>
+            </ng-template>
+          </div>
+        </div>
+    </div>
+  </div>

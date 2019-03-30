@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+
+.headerbar {
+  background: url("assets/headerbar.png") repeat;
+  width: 100%;
+  height: 48px;
+}
+
+.homeimg {
+  position:absolute;
+  top: 15px;
+  left:20px;
+}
+
+body {
+  background-color: black;
+}
+
+p, h3, h4, h5 {
+  color: white !important;
+  text-align: center;
+}
+a {
+  color: gold !important;
+  text-decoration: underline !important;
+}
+a:hover {
+  color: goldenrod !important;
+  text-decoration: none !important;
+}
+
+label {
+  font-weight: bold;
+  margin: 5px;
+}
+
+button {
+  height: 15px;
+  width: 15px;
+  background-color: gold;
+  border: none;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: rgb(231, 222, 166);
+  transform: translateY(2px);
+}
+
+button:focus{
+  outline:none;
+  background-color: gold !important;
+}
+
+.btn:hover, .btn-large:hover{
+  background-color: gold !important;
+  color: black !important;
+}
+.btn-large{
+  background-color: gold !important;
+  color: black !important;
+}
